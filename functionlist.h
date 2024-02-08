@@ -6,7 +6,7 @@
 
 const int maxSize = 150;
 
-void readIn(int arr[], int& size, const std::string & filename) {
+void readIn(int arr[], int& size, const std::string & filename) { //This function reads in the file and determines the current capacity of the array
 	std::ifstream inputFile(filename);
 
 	if (!inputFile) {
@@ -43,13 +43,13 @@ std::pair <int, int> modifyInt(int numberLine[], int size, int modInd, int modNu
 			int tvar = numberLine[modInd];
 			numberLine[modInd] = modNum;
 
-			return std::make_pair(tvar, modNum);
+			return std::make_pair(tvar, modNum); //makes a pair to return both values to the user
 		} 
 	}
 	catch (std::out_of_range& e) 
 	{
 		std::cout << e.what();
-		std::cerr << "Invalid index selection.\n"; //get help on this one in office hours
+		std::cerr << "Invalid index selection.\n";
 		exit(1);
 	}
 }
@@ -80,14 +80,14 @@ void pushClone(int numberLine[], int& size, int newNum, bool printCheck) //This 
 	};
 };
 
-void removeInt(int numberLine[], int size, int delIndex, bool printCheck)
+void removeInt(int numberLine[], int size, int delIndex, bool printCheck) //This function removes an int at the given index and moves all data forward. Then decrements size.
 {
 	for (int i = delIndex; i < size - 1; i++)
 	{
 		numberLine[i] = numberLine[i+1];
 	}
 	--size;
-	if (printCheck == true) //I added a print check for testing and user ease
+	if (printCheck == true) //I added a print check for testing and user ease keeps value from first choice
 	{
 		std::cout << "Updated Array: ";
 		for (int i = 0; i < size; ++i) {

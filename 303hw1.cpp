@@ -27,7 +27,7 @@ int main() {
 
     std::cout << "What value would you like to override with?" << std::endl;
     std::cin >> newVal;
-    std::pair<int, int> buddySystem = modifyInt(numberLine, size, modInd, newVal);
+    std::pair<int, int> buddySystem = modifyInt(numberLine, size, modInd, newVal); // creates a pair for both values to be returned.
     std::cout << "Index [" << modInd << "] has been changed from " << buddySystem.first << " to " << buddySystem.second << std::endl;
 
     //gets user input to add an integer to the end of the array like pushback function for vectors
@@ -45,13 +45,6 @@ int main() {
     std::cout << "Which index would you like to remove?" << std::endl;
     std::cin >> delIndex;
     removeInt(numberLine, size, delIndex, printCheck); //calls function to remove index
-
-    // Display the updated array
-  //  std::cout << "Updated Array: ";
-  //  for (int i = 0; i < size; ++i) {
- //       std::cout << numberLine[i] << " ";
-  // }
- //   std::cout << std::endl;
 
     return 0;
 }
