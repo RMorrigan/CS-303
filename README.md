@@ -7,6 +7,7 @@ Upon running the code, the user will be guided along to make the set changes in 
 Question 1: "What number would you likke to search for?"
   User should enter whichever integer they want to search the file for. I used 14 in the example.
   
+  
 ![image](https://github.com/RMorrigan/CS-303/assets/158345062/b6d9ce65-590d-4858-85c9-24463c599516)
 
 Question 2 & 3: "Which index would you like to modify?" | "What value would you like to override with?"
@@ -17,6 +18,9 @@ Question 2 & 3: "Which index would you like to modify?" | "What value would you 
 
 Question 4: "What number would you like to add to the end of the array?"
   User should input what integer they would like appended to the end of the array. I used 1 in the example.
+
+
+  
   
   ![image](https://github.com/RMorrigan/CS-303/assets/158345062/098e4fdc-99b9-4c75-a91b-3933d2869630)
 
